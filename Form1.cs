@@ -153,7 +153,7 @@ namespace calculatorApp
             {
                 outputFinal.Push(outputQueue.Pop());
             }
-            // Lưu ý: Lúc này outputFinal chứa dạng Postfix nhưng thứ tự lấy ra sẽ là từ trái sang phải
+            // Lưu ý: outputFinal chứa dạng Postfix nhưng thứ tự lấy ra sẽ là từ trái sang phải
             // Để dễ xử lý trong hàm Evaluate, ta trả về List hoặc xử lý đảo ngược lần nữa. 
             
 
@@ -350,7 +350,7 @@ namespace calculatorApp
                     txtDisplay.Text = result.ToString();
 
                     // Hiển thị đánh giá hiệu năng (Time Complexity Measurement)
-                    // Đây là phần ăn điểm với GV
+                    
                     lblPreview.Text = $"Time: {engine.ExecutionTime} ticks ({(engine.ExecutionTime / 10000.0):F4} ms)";
                 }
                 catch (DivideByZeroException)
