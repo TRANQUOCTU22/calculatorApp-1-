@@ -7,11 +7,11 @@ using System.Drawing.Drawing2D;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-// Tên namespace theo ảnh bạn gửi là 'calculatorApp'
+
 namespace calculatorApp
 {
     // ==========================================
-    // PHẦN 1: CẤU TRÚC DỮ LIỆU TỰ ĐỊNH NGHĨA (Theo yêu cầu GV)
+    // PHẦN 1: CẤU TRÚC DỮ LIỆU TỰ ĐỊNH NGHĨA 
     // ==========================================
 
     // Class Node: Đại diện cho 1 phần tử trong Stack
@@ -27,7 +27,7 @@ namespace calculatorApp
         }
     }
 
-    // Class MyStack: Tự viết lại Stack (Không dùng Stack có sẵn của C#)
+    // Class MyStack: 
     public class MyStack<T>
     {
         private Node<T> top;
@@ -87,7 +87,7 @@ namespace calculatorApp
         }
 
         // Thuật toán 2: Kiểm tra tính hợp lệ của dấu ngoặc (Validate Parentheses)
-        // Đây là thuật toán bổ sung để báo cáo của bạn dày hơn
+        // Đây là thuật toán bổ sung 
         public bool IsValidExpression(string expression)
         {
             MyStack<char> checkStack = new MyStack<char>();
@@ -155,7 +155,7 @@ namespace calculatorApp
             }
             // Lưu ý: Lúc này outputFinal chứa dạng Postfix nhưng thứ tự lấy ra sẽ là từ trái sang phải
             // Để dễ xử lý trong hàm Evaluate, ta trả về List hoặc xử lý đảo ngược lần nữa. 
-            // Ở đây để đơn giản và đúng logic MyStack, tôi sẽ trả về outputFinal và xử lý pop.
+            
 
             return outputFinal;
         }
